@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "menu main main main"
+    "footer footer footer footer";
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    font-family: 'Montserrat bold', sans-serif;
+    background-color:#db7093;
+    color: #e6e8fa;
+    text-align: center;
+}
+
+menu {
+    grid-area: menu;
+    background-color: #eaadea;
+    font-family: 'Grape Nuts', cursive;
+    color: #6b238e;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.tarjeta {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #eaeaae;
+    margin: 5px;
+}
+
+.tarjeta img {
+    width: 100%;
+}
+
+.comprar {
+    background-color: beige;
+}
+
+.grupo-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    grid-area: main;
+    background-color: #eaadea;
+}
+
+footer {
+    grid-area: footer;
+    background-color:#db7093;
+    text-align: center;
+}
